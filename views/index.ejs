@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Advanced React Application Example</title>
   <script type="text/javascript">
+    window.initData = <%- JSON.stringify(initData) -%>
   </script>
 </head>
 <body>
-  <div id="root"><%- initData -%></div>
+  <div id="root"><%-initContent-%></div>
   <script src="/bundle.js" charset="utf-8"></script>
 </body>
 </html>
